@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#c5a582">
-  <meta name="description" content="Anurag Yadav — Computer Science Engineering student, software developer, and aspiring AI & cybersecurity engineer.">
-  <title>Anurag Yadav — Developer Portfolio</title>
+  <meta name="description" content="Anurag Yadav — Computer Science Engineering student focused on software development, AI and machine learning.">
+  <title>Anurag Yadav — Software Developer & AI/ML Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <header class="topbar">
     <a class="wordmark" href="#home">Anurag<span>.</span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation">
+    <div class="header-controls"><button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme"><span class="theme-icon" aria-hidden="true">☾</span></button><button class="menu-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span></button></div>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
       <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
       <a href="#projects">Projects</a><a href="#experience">Experience</a>
       <a href="#certifications">Certifications</a><a href="#achievements">Achievements</a>
@@ -23,25 +25,28 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero pink-section" id="home">
       <div class="orb orb-one"></div><div class="orb orb-two"></div>
       <div class="hero-copy">
-        <span class="eyebrow">✦ Software Developer</span>
+        <span class="eyebrow"><span class="status-dot"></span> Software Developer · AI/ML Enthusiast</span>
         <p class="hello">Hello, I'm</p>
         <h1>Anurag<br>Yadav</h1>
         <h2>Computer Science Student <span>·</span> Aspiring AI &amp; SD Engineer</h2>
         <p class="intro">Computer Science Engineering student passionate about building practical software, solving problems through Data Structures & Algorithms, and exploring Artificial Intelligence and Machine Learning to develop intelligent, efficient, and scalable applications.</p>
         <div class="hero-actions"><a class="button button-dark" href="#projects">View My Work ↗</a><a class="button button-outline" href="#" data-resume>Download Resume ↓</a></div>
-        <div class="social-mini"><a href="https://github.com/itsanu2005" data-link="github">⌘ GitHub</a><a href="https://www.linkedin.com/in/anurag-yadav-5928112b2/" data-link="linkedin">in LinkedIn</a><a href="anurag.ydv0805@gmail.com">✉ Email</a></div>
+        <div class="social-mini"><a href="https://github.com/itsanu2005" data-link="github">⌘ GitHub</a><a href="https://www.linkedin.com/in/anurag-yadav-5928112b2/" data-link="linkedin">in LinkedIn</a><a href="mailto:anurag.ydv0805@gmail.com">✉ Email</a></div>
+        <div class="hero-proof"><span><b>01</b><small>Curiosity first</small></span><i></i><span><b>02</b><small>Build &amp; learn</small></span><i></i><span><b>03</b><small>Think in systems</small></span></div>
       </div>
       <aside class="profile-card">
         <div class="profile-meta">ANURAG YADAV / 2026 · OPEN TO OPPORTUNITIES</div>
-        <div class="portrait-placeholder"><img src="assets/Profile.png"alt="Anurag Yadav"></div>
-        <div class="profile-bottom"><div><b>COMPUTER SCIENCE</b><p>Software development · AI/ML </p></div><strong>01 / 08</strong></div>
+        <div class="portrait-placeholder"><img src="assets/Profile.png" alt="Anurag Yadav"></div>
+        <div class="profile-bottom"><div><b>COMPUTER SCIENCE</b><p>Software development · AI/ML </p></div><strong></strong></div>
       </aside>
       <a class="scroll-hint" href="#about">⌄ &nbsp; SCROLL TO EXPLORE</a>
     </section>
+
+    <div class="tech-ribbon" aria-label="Technologies"><div class="tech-ribbon-track"><span>JAVA</span><b>✳</b><span>DATA STRUCTURES</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>PYTHON</span><b>✳</b><span>DATABASES</span><b>✳</b><span>WEB DEVELOPMENT</span><b>✳</b><span>JAVA</span><b>✳</b><span>DATA STRUCTURES</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>PYTHON</span><b>✳</b><span>DATABASES</span><b>✳</b><span>WEB DEVELOPMENT</span><b>✳</b></div></div>
 
     <section class="about section" id="about">
       <div><span class="eyebrow eyebrow-light">✦ About Me</span><h2 class="display-heading">Building<br>with<br>purpose.</h2></div>
@@ -67,11 +72,12 @@
 
     <section class="projects section" id="projects">
       <div class="section-intro"><span class="eyebrow">✦ Selected Work</span><h2 class="display-heading">Things I've built.</h2><p>Projects that reflect my interests in software development, systems, AI, and security.</p></div>
+      <div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All work <span>04</span></button><button class="filter-chip" type="button" data-filter="java" aria-pressed="false">Java &amp; Systems</button><button class="filter-chip" type="button" data-filter="ai" aria-pressed="false">AI / ML</button><button class="filter-chip" type="button" data-filter="database" aria-pressed="false">Databases</button></div>
       <div class="project-list">
-        <article class="project-card"><div class="project-number">01</div><div class="project-content"><small>JAVA · OPERATING SYSTEMS · DATABASES</small><h3>MotoSched — Vehicle Service Scheduler</h3><p>A vehicle servicing platform concept combining customer and vehicle records with service requests, mechanics, service bays, and scheduling algorithms.</p><div class="tags"><span>Java</span><span>MySQL</span><span>OS Scheduling</span><span>OOP</span></div><details><summary>Project details</summary><p>Planned scheduling strategies include FCFS, SJF, Priority, Round Robin, plus a hybrid strategy and aging to explore fair resource allocation.</p></details></div><a class="github-pill" href="#" data-link="motosched">GitHub ↗</a></article>
-        <article class="project-card"><div class="project-number">02</div><div class="project-content"><small>PYTHON · AI · CYBERSECURITY</small><h3>Hybrid AI Intrusion Detection</h3><p>Learning project focused on exploring machine learning techniques for identifying unusual network activity and potential security threats.</p><div class="tags"><span>Python</span><span>Machine Learning</span><span>Cybersecurity</span></div><details><summary>Project details</summary><p>Add your dataset, model approach, evaluation metrics, screenshots, and repository link here as the project develops.</p></details></div><a class="github-pill" href="#" data-link="security">GitHub ↗</a></article>
-        <article class="project-card"><div class="project-number">03</div><div class="project-content"><small>PYTHON · NLP</small><h3>AI Chatbot</h3><p>A chatbot project exploring natural language processing and conversational interactions.</p><div class="tags"><span>Python</span><span>NLP</span><span>AI</span></div><details><summary>Project details</summary><p>Replace this summary with the chatbot's exact features, libraries, and implementation details.</p></details></div><a class="github-pill" href="#" data-link="chatbot">GitHub ↗</a></article>
-        <article class="project-card"><div class="project-number">04</div><div class="project-content"><small>SQL · DATABASE MANAGEMENT</small><h3>Student Management System</h3><p>A DBMS practice project for organizing student information and working with relational data using MySQL.</p><div class="tags"><span>MySQL</span><span>SQL</span><span>DBMS</span></div><details><summary>Project details</summary><p>Add the schema, core queries, constraints, and screenshots when ready.</p></details></div><a class="github-pill" href="#" data-link="studentdb">GitHub ↗</a></article>
+        <article class="project-card" data-category="java database"><div class="project-number">01</div><div class="project-content"><small>JAVA · OPERATING SYSTEMS · DATABASES</small><h3>MotoSched — Vehicle Service Scheduler</h3><p>A vehicle servicing platform concept combining customer and vehicle records with service requests, mechanics, service bays, and scheduling algorithms.</p><div class="tags"><span>Java</span><span>MySQL</span><span>OS Scheduling</span><span>OOP</span></div><details><summary>Project details</summary><p>Planned scheduling strategies include FCFS, SJF, Priority, Round Robin, plus a hybrid strategy and aging to explore fair resource allocation.</p></details></div><a class="github-pill" href="#" data-link="motosched">GitHub ↗</a></article>
+        <article class="project-card" data-category="ai"><div class="project-number">02</div><div class="project-content"><small>PYTHON · AI · CYBERSECURITY</small><h3>Hybrid AI Intrusion Detection</h3><p>Learning project focused on exploring machine learning techniques for identifying unusual network activity and potential security threats.</p><div class="tags"><span>Python</span><span>Machine Learning</span><span>Cybersecurity</span></div><details><summary>Project details</summary><p>Add your dataset, model approach, evaluation metrics, screenshots, and repository link here as the project develops.</p></details></div><a class="github-pill" href="#" data-link="security">GitHub ↗</a></article>
+        <article class="project-card" data-category="ai"><div class="project-number">03</div><div class="project-content"><small>PYTHON · NLP</small><h3>AI Chatbot</h3><p>A chatbot project exploring natural language processing and conversational interactions.</p><div class="tags"><span>Python</span><span>NLP</span><span>AI</span></div><details><summary>Project details</summary><p>Replace this summary with the chatbot's exact features, libraries, and implementation details.</p></details></div><a class="github-pill" href="#" data-link="chatbot">GitHub ↗</a></article>
+        <article class="project-card" data-category="database"><div class="project-number">04</div><div class="project-content"><small>SQL · DATABASE MANAGEMENT</small><h3>Student Management System</h3><p>A DBMS practice project for organizing student information and working with relational data using MySQL.</p><div class="tags"><span>MySQL</span><span>SQL</span><span>DBMS</span></div><details><summary>Project details</summary><p>Add the schema, core queries, constraints, and screenshots when ready.</p></details></div><a class="github-pill" href="#" data-link="studentdb">GitHub ↗</a></article>
       </div>
     </section>
 
@@ -107,10 +113,11 @@
     </section>
 
     <section class="contact dark-section section-pad" id="contact">
-      <div><span class="eyebrow eyebrow-light">✦ Let's Connect</span><h2 class="display-heading">Let's build<br>something<br>meaningful.</h2><p>I'm interested in software development opportunities, collaborations, and projects that solve real problems.</p></div>
-      <div class="contact-links"><a href="anurag.ydv0805@gmail.com"><span>✉</span><b>anurag.ydv0805@gmail.com</b><i>↗</i></a><a href="#" data-link="linkedin"><span>in</span><b>LinkedIn</b><i>↗</i></a><a href="#" data-link="github"><span>⌘</span><b>GitHub</b><i>↗</i></a></div>
+      <div><span class="eyebrow eyebrow-light">✦ Let's Connect</span><div class="contact-status"><span class="status-dot"></span> Open to internships &amp; collaborations</div><h2 class="display-heading">Let's build<br>something<br>meaningful.</h2><p>I'm interested in software development opportunities, collaborations, and projects that solve real problems.</p></div>
+      <div class="contact-links"><a href="mailto:anurag.ydv0805@gmail.com"><span>✉</span><b>anurag.ydv0805@gmail.com</b><i>↗</i></a><a href="#" data-link="linkedin"><span>in</span><b>LinkedIn</b><i>↗</i></a><a href="#" data-link="github"><span>⌘</span><b>GitHub</b><i>↗</i></a></div>
     </section>
   </main>
+  <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
   <footer><div><b>Anurag.</b><p>Computer Science Student · Developer</p></div><small>© <span id="year"></span> Anurag Yadav · Built with HTML, CSS &amp; JavaScript</small></footer>
   <script src="script.js"></script>
 </body>
